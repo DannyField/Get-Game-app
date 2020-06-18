@@ -11,8 +11,8 @@ fetch(
 //   handle the game data from the api
 const giveGame = (data) => {
   console.log(data);
-  let num1 = Math.floor(Math.random() * 16);
-  let num2 = Math.floor(Math.random() * 16);
+  let num1 = Math.floor(Math.random() * 19);
+  let num2 = Math.floor(Math.random() * 19);
   const game = document.querySelector(".game");
   game.insertAdjacentHTML(
     "afterbegin",
@@ -21,5 +21,11 @@ const giveGame = (data) => {
     <img src="${data.results[num1].background_image}" />
     `
   );
-  //   game.insertAdjacentHTML("afterbegin", `<h2>${data.results[num2].name}</h2>`);
+};
+
+const wallpaper = data.results[0].background_image;
+console.log(wallpaper);
+
+const imageheader = (i) => {
+  document.getElementById(".topheader").style.backgroundImage = "i";
 };
