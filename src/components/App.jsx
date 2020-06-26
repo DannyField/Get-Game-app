@@ -10,7 +10,7 @@ class App extends React.Component {
     const games = await response.json();
     console.log(games);
     this.setState({
-      games: games,
+      games: games.results,
     });
   }
 
@@ -23,7 +23,7 @@ class App extends React.Component {
           games.map((game, index) => {
             return (
               <div key={index}>
-                <h1>{game.results}</h1>
+                <h1>{game.name}</h1>
               </div>
             );
           })}

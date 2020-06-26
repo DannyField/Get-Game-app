@@ -7,14 +7,14 @@ class Games extends React.Component {
   }
 
   render() {
-    return <h1>GIVE ME</h1>;
+    return <h1>here</h1>;
   }
 
   // https://api.rawg.io/api/games?dates=2019-10-10,2020-10-10&ordering=-added
 
   //   // Pass the response to create a json
   //   .then((res) => res.json())
-  //   // Then pass the json data to hello function with the data as a prop
+  //   // Then pass the json data to gameItem function with the data as a prop
   //   .then((data) => gameItem(data));
   // return (
   //   <>
@@ -41,21 +41,9 @@ const gameItem = (data) => {
   console.log(mesa);
 };
 
-//   render() {
-//     const games = this.state?.games;
-//     return (
-//       <>
-//         {games &&
-//           games.map((games) => {
-//             return <h1>{games.results[3].name}</h1>;
-//           })}
-//       </>
-//     );
-//   }
-// }
-
 // export default Games;
 
+// This previously worked on the first version of the app - but not in React
 // https://api.rawg.io/api/games?dates=2019-10-10,2020-10-10&ordering=-added
 
 // const Givegame = (data) => {
